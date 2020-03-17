@@ -1,10 +1,12 @@
 // 组件
 import WMCalendar from './mcalendar/MCalendar';
+import WPcCalendar from './pccalendar/PcCalendar';
 // 日期方法
 import * as dateTool from './utils/date';
 
 const cpts = [
   WMCalendar,
+  WPcCalendar,
 ];
 
 const install = (Vue) => {

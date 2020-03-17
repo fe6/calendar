@@ -1,0 +1,169 @@
+@import "../../style/mixin/mixin.scss";
+@import "../../style/config.scss";
+
+@keyframes activeAnim {
+  0% {
+    transform: scale(0.6);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.w-pc-calendar {
+  width: 100%;
+
+  &-header {
+    font-family: 'PingFangSC-Regular';
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+  }
+
+  &-arrow {
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid $arrow-color;
+    border-top: 1px solid $arrow-color;
+    position: absolute;
+
+    &-disabled {
+      border-left: 1px solid $arrow-disabled;
+      border-top: 1px solid $arrow-disabled;
+    }
+  }
+
+  &-left {
+    transform: rotate(-45deg);
+  }
+
+  &-right {
+    transform: rotate(135deg);
+  }
+
+  &-btn {
+    height: 100%;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &-disabled {
+      cursor: no-drop;
+    }
+  }
+
+  &-now {
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $new-color;
+    line-height: 1;
+    font-family: 'PingFangSC-Regular';
+    letter-spacing: 0;
+  }
+
+  &-col {
+    width: 100%;
+    height: 40px;
+    background: $col-color;
+    display: flex;
+  }
+
+  &-week {
+    height: 40px;
+    font-family: 'PingFangSC-Regular';
+    text-align: center;
+    font-size: 12px;
+    height: 100%;
+    color: $date-color;
+    letter-spacing: 0;
+    line-height: 1;
+    width: calc(100% / 7);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-panel {
+    background: none;
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+  }
+
+  &-date {
+    width: calc(100% / 7);
+    position: relative;
+    height: auto;
+    cursor: pointer;
+  }
+
+  &-num {
+    line-height: 1;
+    height: 54px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    width: 100%;
+    transition: color 0.2s, background 0.2s;
+  }
+
+  &-text {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+    line-height: 1;
+    color: $choice-color;
+  }
+
+  &-next,
+  &-prev {
+    color: $disabled-color;
+  }
+
+  &-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-active {
+    color: $write;
+    animation: activeAnim 0.2s;
+    background: $data-active;
+    width: 40px;
+    height: 40px;
+  }
+
+  &-today {
+    color: $today-color;
+  }
+
+  &-choice {
+    color: $choice-color;
+  }
+
+  &-disabled {
+    color: $disabled-color;
+    cursor: no-drop;
+  }
+}
