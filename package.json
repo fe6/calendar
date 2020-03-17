@@ -1,6 +1,6 @@
 {
   "name": "ecalendar2",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "vue 2.x 日历组件",
   "main": "dist/ecalendar2.js",
   "unpkg": "dist/ecalendar2.js",
