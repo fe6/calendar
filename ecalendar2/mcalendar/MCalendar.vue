@@ -15,7 +15,8 @@
           'w-m-calendar-arrow-disabled': nextDisabledValue,
           }"></i>
       </div>
-      <span class="w-m-calendar-now">{{ yearCount }}{{ yearText }}{{ monthCount }}{{ monthText }}</span>
+      <span class="w-m-calendar-now">{{ yearCount }}{{ yearText }}{{ monthCount }}</span>
+      <!-- <span class="w-m-calendar-now">{{ yearCount }}{{ yearText }}{{ monthCount }}{{ monthText }}</span> -->
     </div>
     <div class="w-m-calendar-col">
       <span class="w-m-calendar-week" v-for="week in weekText">{{ week }}</span>
