@@ -1,6 +1,6 @@
 ---
 home: true
-title: 'calendar'
+title: 'calendar2'
 description: 'vue 2.x 日历组件'
 heroImage: /logo.png
 actionText: 快速上手
@@ -11,7 +11,7 @@ footer: MIT Licensed | Copyright © 2018-present 李梦龙
 ### 安装
 
 ``` bash
-yarn add @fe6/calendar
+yarn add @fe6/calendar2
 ```
 
 ::: warning 注意

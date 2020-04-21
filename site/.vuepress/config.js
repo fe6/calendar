@@ -1,7 +1,7 @@
 const base = process.env.GH ? '/calendar/' : '/'
 
 module.exports = {
-  title: 'calendar',
+  title: 'ecalendar2',
   base,
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }]
@@ -16,7 +16,7 @@ module.exports = {
   dest: './docs',
   serviceWorker: true,
   themeConfig: {
-    repo: 'fe6/calendar',
+    repo: 'fe6/calendar2',
     searchMaxSuggestions: 5,
     docsDir: 'site',
     locales: {
@@ -34,6 +34,7 @@ module.exports = {
         sidebar: [
           '/',
           '/mcalendar',
+          '/pccalendar',
           '/date',
         ]
       },

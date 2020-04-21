@@ -16,9 +16,9 @@ var webpackConfig = merge(baseWebpackConfig, {
   plugins: [
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, '../calendar'),
+        from: path.resolve(__dirname, '../'+utils.outname()),
         to: '',
-        ignore: ['.*', '*.md', '.vuepress/**/*', '*.test.*', 'calendar.js']
+        ignore: ['.*', '*.md', '.vuepress/**/*', '*.test.*', utils.outname() + '.js']
       }
     ]),
   ]

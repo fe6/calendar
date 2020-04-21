@@ -1,24 +1,23 @@
 {
-  "name": "@fe6/calendar",
-  "version": "1.0.0",
+  "name": "ecalendar2",
+  "version": "1.0.2",
   "description": "vue 2.x 日历组件",
-  "main": "dist/calendar.js",
-  "unpkg": "dist/calendar.js",
+  "main": "dist/ecalendar2.js",
+  "unpkg": "dist/ecalendar2.js",
   "files": [
     "dist",
-    "calendar"
+    "ecalendar2"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fe6/calendar.git"
   },
   "keywords": [
-    "@fe6/calendar",
+    "@fe6/ecalendar2",
     "@fe6",
     "fe6",
-    "calendar",
-    "wap",
-    "m-calendar"
+    "ecalendar2",
+    "wap"
   ],
   "author": "李梦龙 <649076408@qq.com>",
   "license": "MIT",
